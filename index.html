@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="imagem/png" href="./assets/icons/favicon.ico" />
+    <title>CriptoGama</title>
+  </head>
+  <body>
+    <!--- HEADER -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg justify-content-between">
+          <a class="navbar-brand" href="/"
+            >Cripto<span>Gama</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cripto-cards-info">Informações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cripto-cards">Mercado</a>
+              </li>
+            </ul>
+            <form class="ps-lg-5">
+              <a class="btn btn-light order-1 order-lg-0" href="./contact.html"
+                >Atendimento</a
+              >
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HOME -->
+    <section class="home">
+      <div class="gradiente-home"></div>
+      <div id="grid-background"></div>
+      <div class="container">
+        <div class="row d-flex flex-column">
+          <div class="col-lg-6 col-md-5 text-center mx-auto mb-3">
+            <h1>Tenha acesso as informações das principais criptomoedas</h1>
+            <p>
+              Quer conhecer mais sobre a tecnologia Blockchain e como foi sua
+              evolução ao passar dos anos? Nos acompanhe nessa jornada!
+            </p>
+          </div>
+          <div class="col-lg-6 mx-auto text-center">
+            <a class="btn btn-light order-1 order-lg-0" href="./timeLine.html"
+              >Iniciar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cards Cripto  Capitalização-->
+    <section class="cripto-cards" id="cripto-cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="header-card d-flex">
+                  <img src="/assets/icons/bitcoin-icon-card.svg" />
+                  <span>bitcoin</span>
+                  <span class="card-title">btc</span>
+                  <a
+                    href="https://www.coingecko.com/pt/moedas/bitcoin"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    <img src="/assets/icons/arrow-up-right.svg" />
+                  </a>
+                </div>
+                <div class="footer-card d-flex">
+                  <div class="data-value">
+                    <h1>R$&nbsp;<span id="bitcoin"></span></h1>
+                  </div>
+                  <div class="data-capital d-flex">
+                    <span>24h</span>
+                    <!-- <span>+ R$ 3200.13</span> -->
+                    <div class="market-data d-flex">
+                      <span
+                        ><img src="/assets/icons/market-up-icon.svg"
+                      /></span>
+                      <span class="mkt-up">4.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="header-card d-flex">
+                  <img src="/assets/icons/ethereum-icon-card.svg" />
+                  <span>ethereum</span>
+                  <span class="card-title">eth</span>
+                  <a
+                    href="https://www.coingecko.com/pt/moedas/ethereum"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    <img src="/assets/icons/arrow-up-right.svg" />
+                  </a>
+                </div>
+                <div class="footer-card d-flex">
+                  <div class="data-value">
+                    <h1>R$&nbsp;<span id="ethereum"></span></h1>
+                  </div>
+                  <div class="data-capital d-flex">
+                    <span>24h</span>
+                    <!-- <span>+ R$ 3200.13</span> -->
+                    <div class="market-data d-flex">
+                      <span
+                        ><img src="/assets/icons/market-up-icon.svg"
+                      /></span>
+                      <span class="mkt-up">4.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="header-card d-flex">
+                  <img src="/assets/icons/theter-icon-card.svg" />
+                  <span>tether</span>
+                  <span class="card-title">usdt</span>
+                  <a
+                    href="https://www.coingecko.com/pt/moedas/tether"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    <img src="/assets/icons/arrow-up-right.svg" />
+                  </a>
+                </div>
+                <div class="footer-card d-flex">
+                  <div class="data-value">
+                    <h1>R$&nbsp;<span id="tether"></span></h1>
+                  </div>
+                  <div class="data-capital d-flex">
+                    <span>24h</span>
+                    <!-- <span>+ R$ 3200.13</span> -->
+                    <div class="market-data d-flex">
+                      <span
+                        ><img src="/assets/icons/market-up-icon.svg"
+                      /></span>
+                      <span class="mkt-up">4.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cripto Cards Info -->
+    <section class="cripto-cards-info" id="cripto-cards-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-5 text-center mx-auto mb-3">
+            <h1 class="mb-5">Informações em Primerira Mão</h1>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="mb-3">
+              <div class="card mx-auto">
+                <img
+                  src="/assets/images/bitcoin.jpg"
+                  class="card-img-top"
+                  alt="Imagem de uma moeda de bitcoin"
+                />
+                <div class="card-body">
+                  <h5 class="card-information">Bitcoin</h5>
+                  <p class="card-information">
+                    Bitcoin é uma criptomoeda descentralizada que não necessita
+                    de intermediários ou terceiros para funcionar. Foi a
+                    primeira criptomoeda do mundo e há oito anos funciona sem
+                    qualquer interrupção, baseada em uma rede descentralizada
+                    extremamente segura chamada Blockchain.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="mb-3">
+              <div class="card mx-auto">
+                <img
+                  src="/assets/images/ethereum.jpg"
+                  class="card-img-top"
+                  alt="Imagem de uma moeda de ethereum"
+                />
+                <div class="card-body">
+                  <h5 class="card-information">Ethereum</h5>
+                  <p class="card-information">
+                    Ethereum é a segunda maior criptomoeda do mercado, atrás
+                    apenas do Bitcoin. Foi lançada em 2015 e seu diferencial em
+                    relação a esta, é que sua rede Blockchain pode ser usada
+                    para armazenar digitalmente qualquer tipo de informação
+                    sensivelmente segura como contratos, registros, votações e
+                    certificados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4 m-lg-0">
+            <div class="mb-3">
+              <div class="card mx-auto">
+                <img
+                  src="/assets/images/tether.jpg"
+                  class="card-img-top"
+                  alt="Imagem de uma moeda de tether"
+                />
+                <div class="card-body">
+                  <h5 class="card-information">Tether</h5>
+                  <p class="card-information">
+                    Tether é uma criptomoeda lastreada uma moeda física, lançada
+                    em 2014 com uma proposta de paridade com o dólar norte
+                    americano. É um ativo completamente diferente dos
+                    tradicionais pois tem como proposta, para cada unidade de
+                    Tether emitido, existir uma unidade de dólar equivalente em
+                    caixa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tabela Cotações V1-->
+    <section class="cripto-table mt-5">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-12 col-md-5 text-center mx-auto mb-3">
+            <h1 class="mb-5">Últimas Atualizações do Mercado</h1>
+          </div>
+          <div class="table-responsive table-bg">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="text-uppercase" scope="col">Ranking</th>
+                  <th class="sticky-col-header text-uppercase" scope="col">
+                    Nome
+                  </th>
+                  <th class="text-uppercase" scope="col">Preço</th>
+                  <th class="text-uppercase" scope="col">Variação</th>
+                  <th class="text-uppercase" scope="col">Negociar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td class="sticky-second-col">
+                    <div class="coin-data-table">
+                      <span class="icon">
+                        <img src="/assets/icons/bitcoin-ic-table.svg" />
+                      </span>
+                      <span class="crypto-name">Bitcoin</span>
+                      <span class="symbol">btc</span>
+                    </div>
+                  </td>
+                  <td class="td-price">
+                    R$&nbsp;
+                    <span id="btc-price-table"></span>
+                  </td>
+                  <td class="percent-btc-table" data-colorMarket="up-market">
+                    0.2%
+                  </td>
+                  <td>
+                    <span class="btn">Negociar</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td class="sticky-second-col">
+                    <div class="coin-data-table">
+                      <span class="icon">
+                        <img src="/assets/icons/ethereum-ic-table.svg" />
+                      </span>
+                      <span class="crypto-name">Ethereum</span>
+                      <span class="symbol">eth</span>
+                    </div>
+                  </td>
+                  <td class="td-price">
+                    R$&nbsp;
+                    <span id="eth-price-table"></span>
+                  </td>
+                  <td class="percent-eth-table" data-colorMarket="up-market">
+                    0.3%
+                  </td>
+                  <td>
+                    <span class="btn">Negociar</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td class="sticky-second-col">
+                    <div class="coin-data-table">
+                      <span class="icon">
+                        <img src="/assets/icons/tether-ic-table.svg" />
+                      </span>
+                      <span class="crypto-name">Tether</span>
+                      <span class="symbol">USDT</span>
+                    </div>
+                  </td>
+                  <td class="td-price">
+                    R$&nbsp;
+                    <span id="usdt-price-table"></span>
+                  </td>
+                  <td class="percent-usdt-table" data-colorMarket="up-market">
+                    0.5%
+                  </td>
+                  <td>
+                    <span class="btn">Negociar</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td class="sticky-second-col">
+                    <div class="coin-data-table">
+                      <span class="icon">
+                        <img src="/assets/icons/binance-ic-table.svg" />
+                      </span>
+                      <span class="crypto-name">Binance</span>
+                      <span class="symbol">bnb</span>
+                    </div>
+                  </td>
+                  <td class="td-price">
+                    R$&nbsp;
+                    <span id="bnb-price-table"></span>
+                  </td>
+                  <td class="percent-bnb-table" data-colorMarket="up-market">
+                    0.34%
+                  </td>
+                  <td>
+                    <span class="btn">Negociar</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Carrosel-->
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+      <section class="cripto-carousel">
+        <div class="container">
+          <div class="row">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/biticoin_img.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Imagem de uma moeda de bitcoin com gráficos no fundo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/ethereum_img.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Imagem de uma moeda de ethereum com uma placa de circuitos no fundo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/theter_img.png"
+                    class="d-block w-100 rounded"
+                    alt="Imagem de uma moeda de theter com nota de vinte dólares no fundo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/criptos moedas.png"
+                    class="d-block w-100 rounded"
+                    alt="Imagem de uma moeda de theter com nota de vinte dólares no fundo"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+        <!--Mapa-->
+      <div class="col-md-6 ">
+      <section id="map-container">
+        <div class="container">
+          <div class="row">
+            <div
+              id="map-container-google-1"
+              class="z-depth-1-half map-container d-flex justify-content-center align-items-center"
+              style="height: 500px"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.115111268879!2d-46.6844945!3d-23.5674099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb742db44a55ce752!2sGama%20Academy!5e0!3m2!1spt-BR!2sbr!4v1657151279362!5m2!1spt-BR!2sbr"
+                width="1000"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+
+     <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <a class="navbar-brand" href="#">Cripto<span>Gama</span></a>
+            <div class="my-5">
+              <a
+                class="text-decoration-none"
+                href="https://linkedin.com/"
+                target="_blank"
+              >
+                <i class="fab fa-lg fa-linkedin text-white"></i>
+              </a>
+              <a
+                class="text-decoration-none"
+                href="https://instagram.com/"
+                target="_blank"
+              >
+                <i class="fab fa-lg fa-instagram text-white mx-3"></i>
+              </a>
+              <a
+                class="text-decoration-none"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <i class="fab fa-lg fa-twitter text-white"></i>
+              </a>
+            </div>
+            <p class="text-white">2022 CriptoGama. All rights reserved.</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="fw-bold text-white text-styling">Links</p>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-decoration-none"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-decoration-none"
+                  href="./timeLine.html"
+                  >TimeLine</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-decoration-none"
+                  href="./contact.html"
+                  >Atendimento</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="fw-bold text-white text-styling">Contatos</p>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="https://g.page/gamaacademybr?share"
+                  target="_blank"
+                >
+                  <i class="fas fa-lg fa-home text-white me-1"></i>
+
+                  R. Cap. Antônio Rosa, 376
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="https://wa.me/11999999999"
+                  target="_blank"
+                >
+                  <i class="fab fa-lg fa-whatsapp text-white me-1"></i>
+
+                  (11) 99999-9999
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="mailto:criptogama@exemplo.com"
+                  target="_blank"
+                >
+                  <i class="far fa-lg fa-envelope text-white me-1"></i>
+                  criptogama@exemplo.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/117c9fb757.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

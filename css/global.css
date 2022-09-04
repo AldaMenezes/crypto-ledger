@@ -1,0 +1,35 @@
+:root {
+  /* Primary Colors */
+  --primary: #00de8d;
+  --secondary: rgba(8, 67, 47, 0.45);
+  --back-ground: #020e0a;
+
+  /* Button Style*/
+  --btn-bg: rgba(255, 255, 255, 0.02);
+  --border-btn: 1px solid rgba(0, 222, 141, 0.75);
+
+  /* Font Colors */
+  --simple-title: #ecf1f0;
+  --sub-title: #b6b6b6;
+  --pure-white: #ffff;
+  --sub-title-card: #a39e9e;
+
+  /* Cripto Cards color Up Market*/
+  --bg-color-mkt-up: rgba(22, 62, 10, 0.39);
+  --card-background: rgba(255, 255, 255, 0.02);
+  --arrow-up-color-bg: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(77, 204, 57, 0.4) 0%,
+      rgba(77, 204, 57, 0) 100%
+    );
+  --mkt-up-color: #4dcc39;
+
+  /* Cripto Cards color Down Market*/
+  --bg-color-mkt-down: hsla(355, 100%, 70%, 0.12);
+  --mkt-down-color: hsla(355, 100%, 50%, 1);
+}
